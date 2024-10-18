@@ -1,22 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="input.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      /* Animasiya üçün CSS */
+      .text-container {
+        transition: opacity 0.5s ease;
+        opacity: 0; /* İlk olaraq gizli vəziyyətdədir */
+      }
+
+      .swiper-slide-active .text-container {
+        opacity: 1; /* Aktiv slaydda mətn görünür */
+      }
+    </style>
+  </head>
+  <body>
     <header class="container mx-auto">
+      <main>
         <ul>
-            <li>Как добраться</li>
-            <li>Вопросы</li>
-            <li>Как добраться</li>
+          <li>Как добраться</li>
+          <li>Вопросы</li>
+          <li>Как добраться</li>
         </ul>
         <div>
-            <img src="img/photo.svg" alt="Photo_Logo">
+          <img src="img/photo.svg" alt="Photo_Logo" />
         </div>
-    </header>
-</body>
+      </header>
+      <div class="swiper mySwiper w-full h-[838px]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider8.jpg" alt="Slider Image 1"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">ФОТОСЕССИ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Территория глэмпинга дает огромные возможности для фотографии. Фотосессия в луговых цв­етах и травах, в пол­ях иван-чая, в лесу и в специально обору­дованных зонах.</p>
+            </div>
+          </div>
+          
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider1.webp" alt="Slider Image 2"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">КАТАНИЕ НА ЛОДКЕ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Ре­ка Угра очень популярна для байдарочных маршрутов. Мы регулярно организуем групповые заезды, но можем организовать индивидуальный сплав на байдарках.</p>
+            </div>
+          </div>
+          
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider2.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">КУПАНИЕ В РЕКЕ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Поскольку Угра огибает нашу территорию подковой, можно нырнуть в нее в одном конце нашей территории, проплыть по течению, наслаждаясь пейзажами, и выйти ниже.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider3.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">КУПАНИЕ В РЕКЕ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Поскольку Угра огибает нашу территорию подковой, можно нырнуть в нее в одном конце нашей территории, проплыть по течению, наслаждаясь пейзажами, и выйти ниже.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider4.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">КУПЕЛЬ И БАНЯ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Какая же природа без бани. В отдалении от хижин расположена банька. Удовольствие от парения усиливается шикарными видами на лес через панорамные окна. Воздух в парной наполняется испарениями от гималайской солевой панели, запахом липы и тех масел, что вы любите. Отдельно можно заказать теплую кедровую купель.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider5.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">БАРБЕКЮ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Каждая хижина оборудована манга­льно-костровой зоной. Каждый может почув­ствовать себя повели­телем шашлыка! Ну а мы поможем с доставкой фермерского мяса, свежей рыбы и других необходимых продуктов.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider6.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">РЫБАЛКА</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Рыбалка на Угре очень популярна. Это объясняется чи­стой и прозрачной во­дой, красивой прибрежной зоной и, конечно, большому видовому разнообразию рыб, обитающих в реке.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider7.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">ПИКНИК НА ЛУГУ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Отли­чным времяпрепровождением станет пикник на лугу на берегу реки. Можно взять легкие закуски, напитки и покрывало. Давно ли вы бегали по высокой траве? Когда последний раз смотрели в облака, чтобы отыскать в них животных? В жаркое время можно загорать и купаться, сплавать на другой берег реки или узнать, а что там, на острове?</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider9.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">ПЕШИЕ ПРОГУЛКИ В ЛЕСУ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Собственная терри­тория глэмпинга 49 га, а к нему примыкает еще больший по площади лес. Наша эко-тро­па пока в разработке, но уже сейчас можно совершать прогулки по лесу и вдоль рек­и. Особенностью стан­ет постоянная смена вида растительности. Молодой сосновый лес перемежается симпа­тичными полянками. Земля в березняке уст­лана мягкой травой. В густом смешанном лесу царит прохлада. А обратно всегда мож­но пройти по берегу реки.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider10.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">ПОДВЕСНОЙ МОСТ В ТОВАРКОВО</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">На окраине поселка Товарково есть очень длинный пешеходный​ подвесной мост через реку Угра. Это редкость для центр­альной части России. Мост раскачивается, а под мостом бурлят пороги. Очень необычные, даже острые ощущения. Заехать к мосту можно по дороге в Полотняный завод или сплавляясь на бай­дарках по реке Угра.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider11.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]"> ПАРК "НИКОЛА-ЛЕНИВЕЦ"</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">В живописном природ­ном ландшафте предст­авлена коллекция про­изведений современно­го искусства и архитектуры. Все арт-объекты созданы специально для этого места в рамках фестивалей.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider12.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">АРХСТОЯНИЕ</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Некоторые из них завораживают масштабом и мощью. Рекомендуем провести в парке день, а на ночь возвращаться к нам в глэмпинг чтобы отдохнуть от большого количества людей и впечатлений.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider13.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">Музей-диорама "Великое стояние на Угре"</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Комплекс посвящен обретению суверенитета Русью от ига Золотой Орды. Посещение соп­ровождается рассказом гида, поэтому удастся не только что-то увидеть, но и очень многое понять относи­тельного тех давних времен и событий.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img class="w-full h-full object-cover select-none" src="img/slider14.jpg" alt="Slider Image 3"/>
+            <div class="bg-img w-full absolute bottom-0 h-1/2"></div>
+            <div class="text-container absolute left-1/2 -translate-x-1/2 bottom-32 text-center text-[#f8f8f8] px-5 w-full md:w-3/5">
+                <h3 class="text-[30px] font-bold tracking-[2px]">ГАЛКИНСКИЕ БОЛОТА</h3>
+                <p class="text-base font-medium mt-3 leading-[1.55]">Болота – это особая экосистема и огромное биологическое разнообразие. Галкинские болота оборудованы мостками и смотровыми площадками, указателями и поясняющими материалами.​ С пло­щадки открывается не­вероятный вид на огр­омное зелено-желтое болото с островками искрящейся темной во­ды, бурыми клочками суши, редкими сосенками. Над болотом с криком поднимаются пт­ицы — чайки и цапли. На болотах можно испытать невероятные ощущения от прогулки босиком и покачивания на сплавине. Но лучше это делать в сопровождении экскурсовод­а.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <button class="text-white border-2 rounded-[50px] px-[30px] text-base py-3 border-white font-bold absolute bottom-16 right-1/2 translate-x-1/2 z-50">ЗАБРОНИРОВАТЬ</button>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        on: {
+          slideChangeTransitionStart: function () {
+            document.querySelectorAll('.swiper-slide .text-container').forEach(el => {
+              el.style.opacity = '0';
+            });
+          },
+          slideChangeTransitionEnd: function () {
+            document.querySelectorAll('.swiper-slide-active .text-container').forEach(el => {
+              el.style.opacity = '1';
+            });
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
